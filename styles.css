@@ -1,71 +1,126 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-font-family: Helvetica, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --_hue: 1;
+  --_saturation: 100%;
+  --_lightness: 65%;
 }
 
 body {
-    background-color: #222;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #222;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .piano {
-    display: flex;
-    box-shadow: 0 0 120px 0 rgb(49, 35, 62);
-    max-width: 100%;
+  display: flex;
+  box-shadow: 0 0 120px 0 rgb(49, 35, 62);
+  max-width: 100%;
 }
 
 .key {
-    height: calc(var(--width) * 4);
-    width: var(--width);
-    position: relative;
+  height: calc(var(--_width) * 4);
+  width: var(--_width);
+  position: relative;
 }
 
-.key::before, .black.key::after {
-    content: attr(data-note);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding-left: 8px;
-    padding-block: 4px;
-    font-size: 1.15rem;
-    font-style: italic;
-    opacity: .6;
-    user-select: none;
+.key::before,
+.black.key::after {
+  content: attr(data-note);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 8px;
+  padding-block: 4px;
+  font-size: 1.15rem;
+  font-weight: bolder;
+  color: #111;
+  user-select: none;
 }
 
-.black.key::before, .black.key::after {
-    font-size: .75rem;
+.black.key::before,
+.black.key::after {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #fff;
 }
 
 .black.key::after {
-    content: attr(data-note-sharp);
-    bottom: 1.15rem;
+  content: attr(data-note-sharp);
+  bottom: 1.15rem;
 }
 
 .white {
-    --width: 100px;
-    background-color: #fff;
-    border: 1px solid #333;
+  --_width: 100px;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+[data-note="E"].white {
+  border-right: none;
 }
 
 .white.active {
-    background-color: #CCC;
+  background-color: hsl(var(--_hue), var(--_saturation), var(--_lightness));
 }
 
 .black {
-    --width: 60px;
-    background-color: #000;
-    margin-left: calc(var(--width) / -2);
-    margin-right: calc(var(--width) / -2);
-    color: #fff;
-    z-index: 2;
+  --_width: 60px;
+  background-color: #000;
+  margin-left: calc(var(--_width) / -2);
+  margin-right: calc(var(--_width) / -2);
+  z-index: 2;
 }
 
 .black.active {
-    background-color: #333;
+  --_lightness: 35%;
+  --_saturation: 80%;
+  background-color: hsl(var(--_hue), var(--_saturation), var(--_lightness));
+}
+
+/* Specifies active color for each key */
+div[data-note="C"].white.active {
+  --_hue: 0;
+}
+div[data-note="Db"].black.active {
+  --_hue: 10;
+}
+div[data-note="D"].white.active {
+  --_hue: 22;
+}
+div[data-note="Eb"].black.active {
+  --_hue: 28;
+}
+div[data-note="E"].white.active {
+  --_hue: 55;
+}
+div[data-note="F"].white.active {
+  --_hue: 80;
+}
+div[data-note="Gb"].black.active {
+  --_hue: 85;
+}
+div[data-note="G"].white.active {
+  --_hue: 180;
+}
+div[data-note="Ab"].black.active {
+  --_hue: 195;
+}
+div[data-note="A"].white.active {
+  --_hue: 250;
+}
+div[data-note="Bb"].black.active {
+  --_hue: 275;
+}
+div[data-note="B"].white.active {
+  --_hue: 310;
 }
