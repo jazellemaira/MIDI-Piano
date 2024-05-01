@@ -63,10 +63,8 @@ body {
   --_width: 100px;
   background-color: #fff;
   border: 1px solid #333;
-}
-
-[data-note="E"].white {
-  border-right: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .white.active {
