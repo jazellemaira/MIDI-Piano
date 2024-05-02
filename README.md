@@ -36,7 +36,7 @@ https://github.com/jazellemaira/midi-piano/assets/42837484/f557937d-0edc-4b71-82
 <br />
 
 
-$$\color{plum}{***\ Here's\ are\ some\ snapshots\ ***}$$
+$$\color{plum}{***\ Here\ are\ some\ snapshots\ ***}$$
 
 > [!NOTE]
 > This is the final look from the Web Dev Simplified - JavaScript course:
