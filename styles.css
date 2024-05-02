@@ -62,6 +62,8 @@ body {
   border: 1px solid #333;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+
+  transition: background-color 100ms ease-in-out;
 }
 
 .white.active {
@@ -75,6 +77,8 @@ body {
   margin-right: calc(var(--_width) / -2);
   box-shadow: 4px 4px 10px 0 #333;
   z-index: 2;
+  
+  transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out;
 }
 
 .black.active {
@@ -145,13 +149,13 @@ div[data-note="B"].key-note-card.active h2 {
 }
 
 .keyboard-key-map {
-  margin-block: 80px;
+  margin-block: 80px 20px;
   max-width: 60%;
 }
 
 .upper-keys,
 .lower-keys {
-  margin-block: 20px;
+  margin-block: 10px;
   max-width: 100%;
 }
 
@@ -182,6 +186,8 @@ div[data-note="B"].key-note-card.active h2 {
   text-align: center;
   color: hsl(var(--_hue), var(--_saturation), var(--_lightness), 0.6);
   font-size: 0.75rem;
+
+  transition: color 100ms ease-in-out;
 }
 
 .key-note-card.active h2 {
@@ -197,9 +203,11 @@ div[data-note="B"].key-note-card.active h2 {
   max-width: 100%;
   opacity: 0.2;
   box-shadow: 8px 8px 8px 0 #21052b;
+
+  transition: opacity 100ms ease-in-out, box-shadow 100ms ease-in-out;
 }
 
 .key-note-card.active img {
-  opacity: .4;
+  opacity: 0.4;
   box-shadow: none;
 }
