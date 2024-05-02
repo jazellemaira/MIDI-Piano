@@ -125,3 +125,51 @@ div[data-note="Bb"].black.active {
 div[data-note="B"].white.active {
   --_hue: 310;
 }
+
+.centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.keyboard-key-map {
+  margin-block: 80px;
+  max-width: 60%;
+}
+
+.upper-keys, .lower-keys {
+  margin-block: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.upper-keys {
+  max-width: 95%;
+}
+
+
+.upper-keys-right, .upper-keys-left {
+  margin-inline: auto;
+
+}
+
+.key-note-card {
+  margin-inline: 5px;
+}
+
+.key-note-card h2 {
+  margin: 0;
+  padding-block: 10px;
+  color: #fff;
+  font-size: .85rem;
+}
+
+.key-note-card img {
+  width: 80px;
+  opacity: .20;
+  box-shadow: 8px 8px 8px 0 #21052b;
+}

@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>MIDI Piano 🎹</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="piano">
-        <div data-note="C" class="key white"></div>
-        <div data-note="Db" data-note-sharp="C&#9839;" class="key black"></div>
-        <div data-note="D" class="key white"></div>
-        <div data-note="Eb" data-note-sharp="D&#9839;" class="key black"></div>
-        <div data-note="E" class="key white"></div>
-        <div data-note="F" class="key white"></div>
-        <div data-note="Gb" data-note-sharp="F&#9839;" class="key black"></div>
-        <div data-note="G" class="key white"></div>
-        <div data-note="Ab" data-note-sharp="G&#9839;" class="key black"></div>
-        <div data-note="A" class="key white"></div>
-        <div data-note="Bb" data-note-sharp="A&#9839;" class="key black"></div>
-        <div data-note="B" class="key white"></div>
+      <div data-note="C" class="key white"></div>
+      <div data-note="Db" data-note-sharp="C&#9839;" class="key black"></div>
+      <div data-note="D" class="key white"></div>
+      <div data-note="Eb" data-note-sharp="D&#9839;" class="key black"></div>
+      <div data-note="E" class="key white"></div>
+      <div data-note="F" class="key white"></div>
+      <div data-note="Gb" data-note-sharp="F&#9839;" class="key black"></div>
+      <div data-note="G" class="key white"></div>
+      <div data-note="Ab" data-note-sharp="G&#9839;" class="key black"></div>
+      <div data-note="A" class="key white"></div>
+      <div data-note="Bb" data-note-sharp="A&#9839;" class="key black"></div>
+      <div data-note="B" class="key white"></div>
     </div>
-    <div class="keyboard-key-map">
-        <div class="upper-keys">
-            <div class="key-note-card">
-                <h2>C&#9839; Db</h2>
-                <img src="images/keyboard-keys/s-key.png" alt="S key">
-            </div>
-            <div class="key-note-card">
-                <h2>D&#9839; Eb</h2>
-                <img src="images/keyboard-keys/d-key.png" alt="D key">
-            </div>
-            <div class="key-note-card">
-                <h2>F&#9839; Gb</h2>
-                <img src="images/keyboard-keys/g-key.png" alt="G key">
-            </div>
-            <div class="key-note-card">
-                <h2>G&#9839; Ab</h2>
-                <img src="images/keyboard-keys/h-key.png" alt="H key">
-            </div>
-            <div class="key-note-card">
-                <h2>A&#9839; Bb</h2>
-                <img src="images/keyboard-keys/j-key.png" alt="J key">
-            </div>
+    <div class="keyboard-key-map centered-flex flex-column">
+      <div class="upper-keys centered-flex">
+        <div class="upper-keys-left centered-flex">
+          <div class="key-note-card centered-flex flex-column s-key">
+            <h2>C&#9839; Db</h2>
+            <img src="images/keyboard-keys/s-key.png" alt="S key" />
+          </div>
+          <div class="key-note-card centered-flex flex-column d-key">
+            <h2>D&#9839; Eb</h2>
+            <img src="images/keyboard-keys/d-key.png" alt="D key" />
+          </div>
         </div>
-        <div class="lower-keys">
-            <div class="key-note-card">
-                <h2>C</h2>
-                <img src="images/keyboard-keys/z-key.png" alt="Z key">
-            </div>
-            <div class="key-note-card">
-                <h2>D</h2>
-                <img src="images/keyboard-keys/x-key.png" alt="X key">
-            </div>
-            <div class="key-note-card">
-                <h2>E</h2>
-                <img src="images/keyboard-keys/c-key.png" alt="C key">
-            </div>
-            <div class="key-note-card">
-                <h2>F</h2>
-                <img src="images/keyboard-keys/v-key.png" alt="V key">
-            </div>
-            <div class="key-note-card">
-                <h2>G</h2>
-                <img src="images/keyboard-keys/b-key.png" alt="B key">
-            </div>
-            <div class="key-note-card">
-                <h2>A</h2>
-                <img src="images/keyboard-keys/n-key.png" alt="N key">
-            </div>
-            <div class="key-note-card">
-                <h2>B</h2>
-                <img src="images/keyboard-keys/m-key.png" alt="M key">
-            </div>
+        <div class="upper-keys-right centered-flex">
+          <div class="key-note-card centered-flex flex-column g-key">
+            <h2>F&#9839; Gb</h2>
+            <img src="images/keyboard-keys/g-key.png" alt="G key" />
+          </div>
+          <div class="key-note-card centered-flex flex-column h-key">
+            <h2>G&#9839; Ab</h2>
+            <img src="images/keyboard-keys/h-key.png" alt="H key" />
+          </div>
+          <div class="key-note-card centered-flex flex-column j-key">
+            <h2>A&#9839; Bb</h2>
+            <img src="images/keyboard-keys/j-key.png" alt="J key" />
+          </div>
         </div>
+      </div>
+      <div class="lower-keys centered-flex">
+        <div class="key-note-card centered-flex flex-column z-key">
+          <h2>C</h2>
+          <img src="images/keyboard-keys/z-key.png" alt="Z key" />
+        </div>
+        <div class="key-note-card centered-flex flex-column x-key">
+          <h2>D</h2>
+          <img src="images/keyboard-keys/x-key.png" alt="X key" />
+        </div>
+        <div class="key-note-card centered-flex flex-column c-key">
+          <h2>E</h2>
+          <img src="images/keyboard-keys/c-key.png" alt="C key" />
+        </div>
+        <div class="key-note-card centered-flex flex-column v-key">
+          <h2>F</h2>
+          <img src="images/keyboard-keys/v-key.png" alt="V key" />
+        </div>
+        <div class="key-note-card centered-flex flex-column b-key">
+          <h2>G</h2>
+          <img src="images/keyboard-keys/b-key.png" alt="B key" />
+        </div>
+        <div class="key-note-card centered-flex flex-column n-key">
+          <h2>A</h2>
+          <img src="images/keyboard-keys/n-key.png" alt="N key" />
+        </div>
+        <div class="key-note-card centered-flex flex-column m-key">
+          <h2>B</h2>
+          <img src="images/keyboard-keys/m-key.png" alt="M key" />
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
