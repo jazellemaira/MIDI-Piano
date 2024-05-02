@@ -166,6 +166,7 @@ div[data-note="B"].key-note-card.active h2 {
 .upper-keys-right,
 .upper-keys-left {
   margin-inline: auto;
+  font-style: italic;
 }
 
 .key-note-card {
