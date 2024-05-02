@@ -51,8 +51,8 @@ function getNoteDetail(keyboardKey) {
 function playNotes() {
   //adding different classes to the notes
   NOTE_DETAILS.forEach((n) => {
-    const keyElement = document.querySelector(`[data-note = "${n.note}"]`)
-    keyElement.classList.toggle("active", n.active) //make the note being played to active
+    const keyElements = document.querySelectorAll(`[data-note = "${n.note}"]`)
+    keyElements.forEach((e) => e.classList.toggle("active", n.active)) //make the note being played to active
     /* if default active value is not set or undefined use:
                     n.active || false --- if n.active is undefined set it to false */
     if (n.oscillator != null) {
