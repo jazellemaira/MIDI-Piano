@@ -73,6 +73,10 @@ body {
   transition: background-color 100ms ease-in-out;
 }
 
+.white[data-key="C"] {
+  border-right: transparent;
+}
+
 .white.active {
   background-color: hsl(var(--_hue), var(--_saturation), var(--_lightness));
 }
