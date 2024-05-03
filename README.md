@@ -3,7 +3,7 @@
 
 # $\color{rebeccapurple}{Uni\ MIDI\ Piano}$
 
- <img alt="Static Badge" src="https://img.shields.io/badge/jazellemaira-black?style=flat&label=Built%20with%20%E2%99%A5&labelColor=black&color=gray">
+ <img alt="Static Badge" src="https://img.shields.io/badge/jazellemaira-black?style=flat&label=Built%20with%20%E2%99%A5&labelColor=black&color=plum">
   <br />
   <br />
 
@@ -14,6 +14,8 @@
 <p>An interactive web app that gives a taste of the joy of playing piano directly to your browser. This app allows users to play virtual piano keys using a computer keyboard, creating beautiful melodies and harmonies.</p>
 
 <p>This app was built following a JavaScript course by Kyle of Web Dev Simplified. This project was interesting and enjoyable to work on. And so, I redesigned the app to convey the fun I had. </p>
+
+<p>Also made it so that the app can work with touch devices.</p>
 
 Try it out here [Uni MIDI Piano](https://jazellemaira.github.io/midi-piano/).
 
@@ -29,7 +31,9 @@ Try it out here [Uni MIDI Piano](https://jazellemaira.github.io/midi-piano/).
 
 <div align="center">
 
-$$\color{plum}{***\ Here's\ a\ demo\ of\ Uni\ MIDI\ piano\ ***}$$
+$$\color{plum}{***\ Here's\ a\ visual\ demo}$$
+
+$$\color{plum}{of\ the\ Uni\ MIDI\ piano\ ***}$$
 
 https://github.com/jazellemaira/midi-piano/assets/42837484/f557937d-0edc-4b71-824c-079b0ddc9aad
 </div>
@@ -48,8 +52,7 @@ $$\color{plum}{***\ Here\ are\ some\ snapshots\ ***}$$
 
 
 > [!NOTE]
-> This is my design:
-
+> Revamped design:
 
 <div align="center">
 <img src="https://github.com/jazellemaira/midi-piano/assets/42837484/7cf8cc7b-7579-417e-9e4b-21d3b22a46f1" width=400>
