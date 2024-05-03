@@ -48,7 +48,7 @@ document.addEventListener("keyup", (e) => {
   playNotes()
 })
 
-//click event
+//click event for keyboard keys
 document.addEventListener("pointerdown", (e) => {
   if (e.repeat) return
 
@@ -61,7 +61,7 @@ document.addEventListener("pointerdown", (e) => {
   playNotes()
 })
 
-//unclick event
+//unclick event for keyboard keys
 document.addEventListener("pointerup", (e) => {
   const keyboardKey = e.target.dataset.key
   const noteDetail = getNoteDetail(keyboardKey)
