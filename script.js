@@ -104,13 +104,17 @@ function playNotes() {
 //function that plays the note
 function startNote(noteDetail, gain) {
   const gainNode = audioContext.createGain() //gain node determines the volume of an output
+
   gainNode.gain.value = gain
+
   const oscillator = audioContext.createOscillator() //makes brand new oscillator
   //oscillator allows to play a note at a specific frequency
   oscillator.frequency.value = noteDetail.frequency //hook up oscillator with note details
-  oscillator.type = "sine"
+
+  oscillator.type = "triangle"
   oscillator.connect(gainNode).connect(audioContext.destination) //connect oscillator to audio context --- speakers
   oscillator.start()
+
   noteDetail.oscillator = oscillator //---> this makes the variable globally accessible
   //saves reference to oscillator to so the sound stops playing when something else is done
 }
