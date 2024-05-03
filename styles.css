@@ -20,6 +20,8 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  touch-action: pan-x pan-y;
 }
 
 .piano {
