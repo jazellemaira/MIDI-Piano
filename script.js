@@ -15,6 +15,13 @@ const NOTE_DETAILS = [
   { note: "Bb", key: "J", frequency: 466.164, active: false },
   { note: "B", key: "M", frequency: 493.883, active: false },
 ]
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault()
+  e.stopPropagation()
+  return false
+})
+
 //pressing a key down
 document.addEventListener("keydown", (e) => {
   if (e.repeat) return
@@ -33,6 +40,30 @@ document.addEventListener("keydown", (e) => {
 //releasing a key up
 document.addEventListener("keyup", (e) => {
   const keyboardKey = e.key.toUpperCase()
+  const noteDetail = getNoteDetail(keyboardKey)
+
+  if (noteDetail == null) return
+
+  noteDetail.active = false
+  playNotes()
+})
+
+//click event
+document.addEventListener("pointerdown", (e) => {
+  if (e.repeat) return
+
+  const keyboardKey = e.target.dataset.key
+  const noteDetail = getNoteDetail(keyboardKey)
+
+  if (noteDetail == null) return
+
+  noteDetail.active = true
+  playNotes()
+})
+
+//unclick event
+document.addEventListener("pointerup", (e) => {
+  const keyboardKey = e.target.dataset.key
   const noteDetail = getNoteDetail(keyboardKey)
 
   if (noteDetail == null) return
