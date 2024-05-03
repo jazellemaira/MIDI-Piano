@@ -20,7 +20,8 @@ Try it out here [Uni MIDI Piano](https://jazellemaira.github.io/midi-piano/).
 <br />
 
 > [!IMPORTANT]
-> Currently only playable with a physical keyboard.
+> + Works best with a physical keyboard.
+> + Turn the ringer on when trying on mobile.
 
 <br />
 
@@ -28,7 +29,7 @@ Try it out here [Uni MIDI Piano](https://jazellemaira.github.io/midi-piano/).
 
 <div align="center">
 
-$$\color{plum}{***\ Here's\ a\ demo\ of\ the\ Uni\ MIDI\ piano\ ***}$$
+$$\color{plum}{***\ Here's\ a\ demo\ of\ Uni\ MIDI\ piano\ ***}$$
 
 https://github.com/jazellemaira/midi-piano/assets/42837484/f557937d-0edc-4b71-824c-079b0ddc9aad
 </div>
