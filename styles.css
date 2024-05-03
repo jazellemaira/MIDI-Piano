@@ -180,7 +180,7 @@ div[data-note="B"].key-note-card.active h2 {
 
 .key-note-card {
   margin-inline: 5px;
-  min-width: 40px;
+  min-width: 45px;
   max-width: 80px;
 }
 
